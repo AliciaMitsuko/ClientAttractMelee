@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr" ng-app="facilitation">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" type="img/png" href="img/favicon.png">
+    <title>Serious Game</title>
+
+    <!-- Notif -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheets/angular-notify-material.css" id="notifyTheme">
+    <link rel="stylesheet" href="stylesheets/bootstrap.min.css" />
+    <link rel="stylesheet" href="stylesheets/simple-sidebar.css" />
+    <link rel="stylesheet" href="stylesheets/myStyle.css" />
+    <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--<base href="/">-->
+    <!--<link rel="stylesheet" href="stylesheets/bootstrap-theme.min.css" />-->
+  </head>
+  <body ng-controller="MainCtrl">
+    <nav-bar></nav-bar>
+
+    <div notifybar style="position:absolute;top:50px;right:0"></div>
+    <div ng-view></div>
+
+    <div class="footer text-center">
+      <div class="container">
+        <p>Serious game - 2016</p>
+      </div>
+    </div>
+    <script src="libraries/angular.min.js"></script>
+    <script src="libraries/angular-route.min.js"></script>
+    <script src="libraries/angular-sanitize.min.js"></script>
+    <script src="libraries/angular-cookies.min.js"></script>
+    <script src="libraries/angular-resource.min.js"></script>
+    <script src="libraries/ui-bootstrap-tpls-2.2.0.min.js"></script>
+
+    <script src="bower_components/moment/min/moment.min.js"></script>
+    <script src="bower_components/moment/min/locales.min.js"></script>
+    <script src="bower_components/humanize-duration/humanize-duration.js"></script>
+    <script src="bower_components/angularjs-humanize-duration/src/angular-humanize-duration.js"></script>
+    <script src="libraries/angular-timer.min.js"></script>
+
+    <script src="app.js"></script>
+    <script src="main.controller.js"></script>
+    <script src="components/navbar/navbar.controller.js"></script>
+    <script src="components/navbar/navbar.directive.js"></script>
+    <script src="components/home/home.controller.js"></script>
+
+    <script src="components/services/catalogue.service.js"></script>
+    <script src="components/services/account.auth.factory.js"></script>
+    <script src="components/services/account.session.factory.js"></script>
+    <script src="components/services/favorite.service.js"></script>
+    <script src="components/services/account.user.factory.js"></script>
+
+    <script src="components/catalogue/catalogue.controller.js"></script>
+
+
+    <script src="bower_components/angular-http-auth/src/http-auth-interceptor.js"></script>
+
+    <script src="libraries/jquery.min.js"></script>
+    <!-- https://github.com/cheiron1990/angular-notify -->
+    <script src="libraries/angular-notify.js"></script>
+    <script src="libraries/bootstrap.js"></script>
+  </body>
+</html>

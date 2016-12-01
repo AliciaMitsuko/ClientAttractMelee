@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="48px"
+   height="48px"
+   viewBox="8 3 48 48"
+   version="1.1"
+   id="svg3128"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="check.svg">
+  <metadata
+     id="metadata3161">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1316"
+     inkscape:window-height="747"
+     id="namedview3159"
+     showgrid="false"
+     inkscape:zoom="4.9166667"
+     inkscape:cx="24"
+     inkscape:cy="24"
+     inkscape:window-x="50"
+     inkscape:window-y="21"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg3128" />
+  <defs
+     id="defs3130">
+    <circle
+       id="path-1"
+       cx="16"
+       cy="16"
+       r="16" />
+    <filter
+       x="-50%"
+       y="-50%"
+       width="200%"
+       height="200%"
+       filterUnits="objectBoundingBox"
+       id="filter-2">
+      <feOffset
+         dx="0"
+         dy="4"
+         in="SourceAlpha"
+         result="shadowOffsetOuter1"
+         id="feOffset3134" />
+      <feGaussianBlur
+         stdDeviation="2"
+         in="shadowOffsetOuter1"
+         result="shadowBlurOuter1"
+         id="feGaussianBlur3136" />
+      <feColorMatrix
+         values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.24 0"
+         type="matrix"
+         in="shadowBlurOuter1"
+         result="shadowMatrixOuter1"
+         id="feColorMatrix3138" />
+      <feOffset
+         dx="0"
+         dy="0"
+         in="SourceAlpha"
+         result="shadowOffsetOuter2"
+         id="feOffset3140" />
+      <feGaussianBlur
+         stdDeviation="2"
+         in="shadowOffsetOuter2"
+         result="shadowBlurOuter2"
+         id="feGaussianBlur3142" />
+      <feColorMatrix
+         values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.12 0"
+         type="matrix"
+         in="shadowBlurOuter2"
+         result="shadowMatrixOuter2"
+         id="feColorMatrix3144" />
+      <feMerge
+         id="feMerge3146">
+        <feMergeNode
+           in="shadowMatrixOuter1"
+           id="feMergeNode3148" />
+        <feMergeNode
+           in="shadowMatrixOuter2"
+           id="feMergeNode3150" />
+      </feMerge>
+    </filter>
+  </defs>
+  <g
+     id="success"
+     stroke="none"
+     stroke-width="1"
+     fill="none"
+     fill-rule="evenodd"
+     transform="translate(16.000000, 12.000000)">
+    <g
+       id="Oval-2">
+      <use
+         fill="black"
+         fill-opacity="1"
+         filter="url(#filter-2)"
+         xlink:href="#path-1"
+         id="use3154" />
+      <use
+         fill="#FFFFFF"
+         fill-rule="evenodd"
+         xlink:href="#path-1"
+         id="use3156" />
+    </g>
+    <polygon
+       id="Combined-Shape"
+       fill="#8BC34A"
+       points="12.7552038 20.5428932 7.41421356 15.201903 6 16.6161165 12.363961 22.9800776 12.3838835 22.9601551 12.7751263 23.3513979 25.7123106 10.4142136 24.298097 9 12.7552038 20.5428932" />
+  </g>
+  <path
+     style="fill:#2c3e50;stroke:#646464;stroke-width:0.20338982000000000;stroke-opacity:1;fill-opacity:1"
+     d="m 17.435822,28.845999 -3.244156,-3.248916 0.594598,-0.620627 0.594598,-0.620627 2.703534,2.697969 2.703534,2.697969 5.790013,-5.78734 5.790013,-5.787339 0.621947,0.595862 0.621946,0.595863 -6.360646,6.363051 c -3.498355,3.499678 -6.408026,6.363051 -6.465936,6.363051 -0.05791,0 -1.565159,-1.462012 -3.349445,-3.248916 z"
+     id="path3181"
+     inkscape:connector-curvature="0"
+     transform="translate(8,3)" />
+</svg>
