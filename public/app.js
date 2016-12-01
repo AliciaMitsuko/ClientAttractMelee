@@ -16,6 +16,9 @@ app.config(function($routeProvider, $locationProvider) {
   $routeProvider
       .when("/", {
           templateUrl: "components/home/home.html"
+      })
+      .otherwise({
+          redirectTo: "/"
       })});
       /*.when("/catalogue", {
           templateUrl: "components/catalogue/catalogue.html",
