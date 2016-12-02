@@ -5,18 +5,23 @@
         <h3>Pays de départ</h3>
     </div>
     <div class="row">
+      <div class="col-lg-7">
         <div class="form-group">
-            <label for="sel1">Choisissez un pays:</label>
+            <label for="sel1">Choisissez votre pays d'origine:</label>
 
 
             <select ng-change="change()" ng-model="selectedCountry" class="form-control" id="sel1">
               <option ng-repeat="country in countries">{{country}}</option>
             </select>
-            <p><div ng-click="setModalDepart({{selectedCountry}})" ng-model="buttonModal" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModalDepart">Afficher le pays</div></p>
+            <p><div ng-model="buttonModal" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModalDepart">Afficher le pays</div></p>
         </div>
         <div id="container">Placeholder for chart</div>
-        <h2>Risque : {{risk}}</h2>
-        <h2>Danger départ : {{dangerDepart}}</h2>
+        </div>
+        <div class="col-lg-5">
+          <h2>Risque : {{risk}} ({{selectedCountry}})</h2>
+          <h2>Danger départ : {{dangerDepart}}</h2>
+
+        </div>
     </div>
     <!-- 1. Add these JavaScript inclusions in the head of your page -->
     <br/><br/><br/>
@@ -30,7 +35,7 @@
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4 class="modal-title">Information Pays</h4>
+            <h4 class="modal-title">Information Pays {{selectedCountry}}</h4>
           </div>
           <div class="modal-body">
             <div class="row">
@@ -41,7 +46,7 @@
                 <p>Stat asile</p>
                 <p>Documents</p>
                 <p>Procédure</p>
-                <p>Comments ?</p>
+                <p>Commentaire</p>
               </div>
             </div>
           </div>

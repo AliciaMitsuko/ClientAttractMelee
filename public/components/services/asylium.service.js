@@ -8,11 +8,11 @@
 var app = angular.module('facilitation');
 app.service('AsyliumService', function ($http) {
     delete $http.defaults.headers.common['X-Requested-With'];
-    this.getAsyliumDemandsEstimation = getAsyliumDemandsEstimationImpl;
-    function getAsyliumDemandsEstimationImpl(countryCode) {
+    this.getAsyliumDemandsEstimator = getAsyliumDemandsEstimatorImpl;
+    function getAsyliumDemandsEstimatorImpl(countryCode) {
         var req = {
             method: 'GET',
-            url: 'localhost:8080/asyliumDemand/'+countryCode+'/estimation',
+            url: 'http://localhost:8081/asyliumDemand/'+countryCode+'/estimator',
             headers: {
                 'Content-Type': 'application/json'
             }

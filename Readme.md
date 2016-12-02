@@ -1,10 +1,5 @@
-<!-- Titre page -->
-<div class="container" ng-controller="homeCtrl">
-<br/><br/><br/>
-    <div class="page-header">
-        <h3>Bienvenue sur le site FreeBorder !</h3>
-    </div>
-    <div class="row">
+# Attract Melee - Team Nuit Info 2016
+
       <p>FreeBorder est une plateforme , il fait appel à divers services (attractmelee-socialnetwork, asylium-service, account_service)</p>
       <a href="/#/asylium" class="btn btn-primary btn-lg dark-blue">Asylium</a>
       <a href="/#/depart" class="btn btn-primary btn-lg dark-blue">Départ</a>
@@ -30,5 +25,4 @@
       <br/><br/><br/><br/><br/>
 
       <p>Nous sommes une équipe de jeunes ingénieurs et nous aimons relever les défis.</p>
-    </div>
-</div>
+

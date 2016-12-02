@@ -4,7 +4,7 @@
 'use strict';
 
 var app = angular.module('facilitation');
-app.controller('asyliumCtrl', function ($scope) {
+app.controller('asyliumCtrl', function ($scope, SocialNetwork) {
     $scope.modal = {
         title: "Default",
         interests: {
@@ -68,4 +68,25 @@ app.controller('asyliumCtrl', function ($scope) {
             }
         }
     };
+
+
+    // Appele au chargement de la page
+    // Faire fonctionner social media
+    SocialNetwork.getSocialNetwork().then(function(data){
+        console.log(data.data[0].location);
+        var count = Object.keys(data.data).length;
+        for (var i=0; i<count; i++) {
+          var lat = data.data[i].location.latitude;
+          var lon = data.data[i].location.longitude;
+          var marker = {
+              id: Date.now(),
+              coords: {
+                  latitude: lat,
+                  longitude: lon
+              }
+          };
+          // ajoute le marqueur identifié
+          $scope.map.markers.push(marker);
+        }
+    });
 });
