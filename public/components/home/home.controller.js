@@ -1,6 +1,3 @@
-/**
- * Created by lucas on 23/11/16.
- */
 'use strict';
 
 var app = angular.module('facilitation');
