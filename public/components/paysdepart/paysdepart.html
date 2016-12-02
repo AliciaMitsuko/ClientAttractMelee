@@ -8,16 +8,15 @@
         <div class="form-group">
             <label for="sel1">Choisissez un pays:</label>
 
-            <p><div ng-repeat="country in countries" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModalDepart">{{country}}</div></p>
 
-            <select ng-change="change()" ng-model="confirmed" class="form-control" id="sel1">
+            <select ng-change="change()" ng-model="selectedCountry" class="form-control" id="sel1">
               <option ng-repeat="country in countries">{{country}}</option>
             </select>
+            <p><div ng-click="setModalDepart({{selectedCountry}})" ng-model="buttonModal" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModalDepart">Afficher le pays</div></p>
         </div>
         <div id="container">Placeholder for chart</div>
-        <h2>Risque</h2>
-        <h2>Danger départ</h2>
-        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d23104.062494904214!2d7.0821222!3d43.62719635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1480637963229" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe> -->
+        <h2>Risque : {{risk}}</h2>
+        <h2>Danger départ : {{dangerDepart}}</h2>
     </div>
     <!-- 1. Add these JavaScript inclusions in the head of your page -->
     <br/><br/><br/>
@@ -38,7 +37,7 @@
               <div class="col-lg-8"><p>Carte</p></div>
               <div class="col-lg-4">
                 <p>Nom</p>
-                <p>Pays</p>
+                <p>{{selectedCountry}}</p>
                 <p>Stat asile</p>
                 <p>Documents</p>
                 <p>Procédure</p>
