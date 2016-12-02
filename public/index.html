@@ -23,7 +23,7 @@
     <nav-bar></nav-bar>
 
     <div notifybar style="position:absolute;top:50px;right:0"></div>
-    <div ng-view></div>
+    <div id="ngview" ng-view></div>
 
     <div class="footer text-center navbar-fixed-bottom">
       <div class="container">
@@ -32,16 +32,22 @@
     </div>
     <script src="libraries/angular.min.js"></script>
     <script src="libraries/angular-route.min.js"></script>
+    <script src="bower_components/lodash/dist/lodash.min.js"></script>
     <script src="libraries/angular-sanitize.min.js"></script>
     <script src="libraries/angular-cookies.min.js"></script>
     <script src="libraries/angular-resource.min.js"></script>
+    <script src="bower_components/angular-simple-logger/dist/angular-simple-logger.min.js"></script>
+    <script src="bower_components/angular-google-maps/dist/angular-google-maps_dev_mapped.min.js"></script>
+    <script src="libraries/angular-google-maps.min.js"></script>
     <script src="libraries/ui-bootstrap-tpls-2.2.0.min.js"></script>
+
 
     <script src="bower_components/moment/min/moment.min.js"></script>
     <script src="bower_components/moment/min/locales.min.js"></script>
     <script src="bower_components/humanize-duration/humanize-duration.js"></script>
     <script src="bower_components/angularjs-humanize-duration/src/angular-humanize-duration.js"></script>
     <script src="libraries/angular-timer.min.js"></script>
+
 
     <script src="app.js"></script>
     <script src="main.controller.js"></script>
@@ -50,13 +56,11 @@
     <script src="components/home/home.controller.js"></script>
     <script src="components/paysdepart/paysdepart.controller.js"></script>
 
-    <script src="components/services/catalogue.service.js"></script>
     <script src="components/services/account.auth.factory.js"></script>
     <script src="components/services/account.session.factory.js"></script>
-    <script src="components/services/favorite.service.js"></script>
     <script src="components/services/account.user.factory.js"></script>
+    <script src="components/asylium/asylium.controller.js"></script>
 
-    <script src="components/catalogue/catalogue.controller.js"></script>
 
     <script src="bower_components/highcharts/highcharts.js"></script>
 

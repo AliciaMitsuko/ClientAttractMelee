@@ -6,13 +6,14 @@ var app = angular.module('facilitation', [
     'ngCookies',
     'ngResource',
     'ngSanitize',
+    'uiGmapgoogle-maps',
     'ngRoute',
     'ui.bootstrap',
     'http-auth-interceptor',
     'angularNotify'
 ]);
 
-app.config(function($routeProvider, $locationProvider) {
+app.config(function(uiGmapGoogleMapApiProvider, $routeProvider, $locationProvider) {
   $routeProvider
       .when("/", {
           templateUrl: "components/home/home.html"
@@ -20,13 +21,19 @@ app.config(function($routeProvider, $locationProvider) {
       .when("/depart", {
           templateUrl: "components/paysdepart/paysdepart.html"
       })
+      .when("/asylium", {
+          templateUrl: "components/asylium/asylium.html",
+          controller: "asyliumCtrl"
+      })
       .otherwise({
           redirectTo: "/"
-      })});
-      /*.when("/catalogue", {
-          templateUrl: "components/catalogue/catalogue.html",
-          controller: "catalogueCtrl"
-      })});*/
+      });
+    uiGmapGoogleMapApiProvider.configure({
+        key: 'AIzaSyDRIF5JFkQ6xzHrvLDZ8n84k1pbPgRqcM4',
+        libraries: 'weather,geometry,visualization'
+    });
+});
+
 
 app.run(function ($rootScope, $location, Auth) {
 

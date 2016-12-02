@@ -332,3 +332,7 @@ a:focus.link, a:hover.link, .close {
     background-color: #2c3e50;
     border-color: #1a242f;
 }
+
+.angular-google-map-container{
+    height: 600px;
+}
