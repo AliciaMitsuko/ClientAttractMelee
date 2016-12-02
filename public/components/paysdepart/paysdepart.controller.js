@@ -30,7 +30,7 @@ app.controller('paysdepartCtrl', function ($scope) {
             },
             tooltip: {
                 headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
-                pointFormat: '<tr><td style="color:{series.color};padding:0">{series.country}: </td>' +
+                pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
                     '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
                 footerFormat: '</table>',
                 shared: true,
@@ -43,14 +43,14 @@ app.controller('paysdepartCtrl', function ($scope) {
                 }
             },
             series: [{
-                country: 'FR',
+                name: 'FR',
                 data: [49.9]
             }, {
-                country: 'BE',
+                name: 'BE',
                 data: [83.6]
 
             }, {
-                country: 'AUS',
+                name: 'AUS',
                 data: [48.9]
 
             }]
@@ -58,15 +58,15 @@ app.controller('paysdepartCtrl', function ($scope) {
 
         $scope.change = function(countrySearch){
           $scope.chart.series[0].update({
-            series: [{
-                country: 'FR',
+            data: [{
+                name: 'FR',
                 data: [9.9]
             }, {
-                country: 'BE',
+                name: 'BE',
                 data: [13.6]
 
             }, {
-                country: 'AUS',
+                name: 'AUS',
                 data: [78.9]
 
             }]
