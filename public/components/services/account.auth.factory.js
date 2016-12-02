@@ -6,8 +6,9 @@
  ***********************************************/
 'use strict';
 angular.module('facilitation')
-    .factory('Auth', function Auth($location, $rootScope, Session, User, $cookieStore) {
-        $rootScope.currentUser = $cookieStore.get('user') || null;
+    .factory('Auth', function Auth($location, $rootScope, $cookieStore) {
+        return {};
+        /*$rootScope.currentUser = $cookieStore.get('user') || null;
         console.log("TEST");
         console.log($rootScope.currentUser);
         $cookieStore.remove('user');
@@ -85,5 +86,5 @@ angular.module('facilitation')
                     return cb(err.data);
                 });
             }
-        };
-    })
+        };*/
+    });
