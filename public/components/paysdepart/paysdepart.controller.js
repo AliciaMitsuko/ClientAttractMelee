@@ -6,7 +6,7 @@ app.controller('paysdepartCtrl', function ($scope) {
     $scope.data = {};
     $scope.dataNote = [];
         $scope.countries = ["FR", "BE", "AUS"];
-        $scope.chart = Highcharts.chart('container', {
+        $scope.chart = new Highcharts.Chart('container', {
             chart: {
                 type: 'column'
             },
@@ -53,20 +53,24 @@ app.controller('paysdepartCtrl', function ($scope) {
                 country: 'AUS',
                 data: [48.9]
 
-            }, {
-                country: 'Berlin',
-                percent: [42.4]
-
             }]
         });
 
-        $scope.change = function(){
-          // $scope.title = "Appel d'une fonction"
-          // $scope.ohHey = function () {
-          // alert('ok');
-              // console.log("Oh hey");
-          // };
-          // alert($scope.chart.series[0]);
+        $scope.change = function(countrySearch){
+          $scope.chart.series[0].update({
+            series: [{
+                country: 'FR',
+                data: [9.9]
+            }, {
+                country: 'BE',
+                data: [13.6]
+
+            }, {
+                country: 'AUS',
+                data: [78.9]
+
+            }]
+        }, true);
           console.log($scope.chart.series[0]);
         }
     });

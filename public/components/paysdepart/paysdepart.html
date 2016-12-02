@@ -8,6 +8,7 @@
         <div class="form-group">
             <label for="sel1">Choisissez un pays:</label>
 
+            <p><div ng-repeat="country in countries" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModalDepart">{{country}}</div></p>
 
             <select ng-change="change()" ng-model="confirmed" class="form-control" id="sel1">
               <option ng-repeat="country in countries">{{country}}</option>
@@ -20,4 +21,37 @@
     </div>
     <!-- 1. Add these JavaScript inclusions in the head of your page -->
     <br/><br/><br/>
+
+
+    <!-- Modal -->
+    <div id="myModalDepart" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Modal Header</h4>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-lg-8"><p>Carte</p></div>
+              <div class="col-lg-4">
+                <p>Nom</p>
+                <p>Pays</p>
+                <p>Stat asile</p>
+                <p>Documents</p>
+                <p>Procédure</p>
+                <p>Comments ?</p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
 </div>
